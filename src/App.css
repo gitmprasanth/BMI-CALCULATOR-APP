@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Play:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto",sans-serif;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #535c68;
+
+}
+.bmi-calculator{
+   width: 800px;
+   height: 500px;
+   padding: 20px;
+   background-color: white;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   display: flex;
+}
+.box{
+  width:350px;
+  background-image: url("https://prognohealth.com/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-07-at-6.30.02-PM.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+.data{
+  flex:1;
+  padding: 15px;
+}
+h1{
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  font-size: 20px;
+  color:#2980b9 ;
+}
+.input-container{
+  margin-bottom: 15px;
+}
+label{
+  display: block;
+  margin-bottom: 5px;
+  color: #888;
+}
+input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  font-size: 18px;
+}
+button{
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.data button:nth-of-type(2){
+  background-color: rgb(246, 47, 47);
+  margin-left: 10px;
+}
+.data button:nth-of-type(2):hover{
+  background-color: rgb(251, 12, 12);
+}
+button:hover{
+  background-color: #2980b9;
+}
+.result{
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #3498db;
+  border-radius: 4px;
+}
+.result p{
+  margin: 10px 0;
+  color:#555
+}
+.result p:first-child{
+  color: #3498db;
+  font-weight: bold;
+}
+.error{
+  color:red;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+ @media only screen and (max-width:600px){
+  .bmi-calculator
+  {
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .box {
+    width:200px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("https://prognohealth.com/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-07-at-6.30.02-PM.webp");
+  
+  }
+  
+  
+ }
